@@ -19,7 +19,7 @@ export const envSchema = z.object({
     }),
 
   // Database connection string
-  DATABASE_URL: z.url().default('postgres://postgres:postgres@localhost:5432/vsa_m_nest'),
+  DATABASE_URL: z.url().default('postgres://postgres:postgres@127.0.0.1:5433/postgres'),
 
   // Database connection pool configuration
   DB_POOL_MAX: z

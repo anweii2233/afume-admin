@@ -17,7 +17,7 @@ import { Pool } from 'pg'
 import { accountsTable, usersTable } from '../src/schemas/identity/index'
 
 // Load environment variables
-config({ path: '.env' })
+config({ path: '.env', override: true })
 
 const TEST_ACCOUNTS = [
   {
